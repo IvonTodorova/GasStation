@@ -1,0 +1,13 @@
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.exe
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.dll
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.deps.json
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.runtimeconfig.json
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.runtimeconfig.dev.json
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\bin\Debug\netcoreapp3.0\GasStationProject.pdb
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.AssemblyInfoInputs.cache
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.AssemblyInfo.cs
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.csproj.CoreCompileInputs.cache
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.dll
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.pdb
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.genruntimeconfig.cache
+C:\Users\IVON\Downloads\Garbage\GasStation\GasStation\obj\Debug\netcoreapp3.0\GasStationProject.csprojAssemblyReference.cache

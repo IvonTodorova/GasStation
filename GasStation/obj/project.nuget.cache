@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "PIHzYqjAJLVI12aq03vxENonpiKbhU2PbUmzh65dh37L4pmjhkzgeSDWP38v4zS7MVNYM1tFgxAyBkd+VWXfBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IVON\\source\\repos\\GasStation\\GasStation\\GasStationProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IVON\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\IVON\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\IVON\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\IVON\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
