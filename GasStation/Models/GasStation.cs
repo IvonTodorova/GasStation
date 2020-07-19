@@ -22,7 +22,9 @@ namespace GasStationProject.Models
             this.Lanes[1] = new Lane(1);
             this.Lanes[2] = new Lane(2);
 
+            //list of fuel records 
             this.FuelRecords = new List<FuelRecord>();
+            //list of left cars before fueling 
             this.LeftCars = new List<LeftCars>();
         }
 
