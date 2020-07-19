@@ -51,10 +51,14 @@ namespace GasStationProject.Models
             {
                 return;
             }
-
             //Car can be removed from the global tracker but will still be in queue so we need to check for such "ghost cars"
             this.CheckForLeftCars();
 
+            //if no cars in que no need to do anything
+            if (this.CarQueue.Count == 0)
+            {
+                return;
+            }
             //Get first car from queue without removeing it
             var nextCar = this.CarQueue.Peek();
 

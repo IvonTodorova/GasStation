@@ -10,6 +10,8 @@ namespace GasStationProject.Models
         //lsit of static length of lanes
         public Lane[] Lanes { get; set; }
         public List<FuelRecord> FuelRecords { get; set; }
+        public List<LeftCars> LeftCars { get; set; }
+       
         public GasStation()
         {
             //3 lanes per station
@@ -21,6 +23,7 @@ namespace GasStationProject.Models
             this.Lanes[2] = new Lane(2);
 
             this.FuelRecords = new List<FuelRecord>();
+            this.LeftCars = new List<LeftCars>();
         }
 
     }
