@@ -30,7 +30,7 @@ namespace GasStationProject.Models
             //Set lane Id
             this.LaneId = laneId;
 
-            //Create queue for carzs
+            //Create queue for cars
             this.CarQueue = new Queue<Car>();
         }
 
