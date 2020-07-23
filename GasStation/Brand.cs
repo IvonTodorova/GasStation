@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading;
 
 
-namespace GasStationProject
+namespace GasStationProject.Models.Enums
 {
     public enum Brand
     {
