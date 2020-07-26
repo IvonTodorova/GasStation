@@ -2,6 +2,7 @@
 using GasStationProject.Models.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 
@@ -623,25 +624,45 @@ namespace GasStationProject
         //Adds car to queue
         private static void QueueCar(Car car)
         {
-            //initialize index and value for simple algorithm to find smalles value in a array. If all are equal the first lane will be chosen
-            var smallestQueueIndex = -1;
-            var smallestQueueLenghtr = int.MaxValue;
+                 //tuple for the count of vehicles in each line 
+                 List<Tuple<int, int, int,int>> ListOfTupples = new List<Tuple<int, int, int,int>>();
 
-            for (int i = 0; i < GasStation.Lanes.Length; i++)
-            {
-                var lane = GasStation.Lanes[i];
-                //Condition for a smalles value
-                if (lane.GasPumps.Any(x => x.FuelType == car.FuelType) && lane.CarQueue.Count < smallestQueueLenghtr)
+                foreach (var line in GasStation.Lanes)
                 {
-                    //replace old info for smallest value
-                    smallestQueueIndex = i;
-                    smallestQueueLenghtr = lane.CarQueue.Count;
+                    if (line.LaneId == 0)
+                    {
+                        int count0 = line.CarQueue.Where(y => y.Name == "Truck").Count();
+                        int count1 = line.CarQueue.Where(y => y.Name == "Car").Count();
+                        int count2 = line.CarQueue.Where(y => y.Name == "Bus").Count();
+
+                        Tuple<int, int, int, int> tup0 = new Tuple<int, int, int, int>(count0, count1, count2, 0);
+                        ListOfTupples.Add(tup0);
+                    }
+                    if (line.LaneId == 1)
+                    {
+                        int count0 = line.CarQueue.Where(y => y.Name == "Truck").Count();
+                        int count1 = line.CarQueue.Where(y => y.Name == "Car").Count();
+                        int count2 = line.CarQueue.Where(y => y.Name == "Bus").Count();
+
+                        Tuple<int, int, int, int> tup1 = new Tuple<int, int, int, int>(count0, count1, count2, 1);
+                        ListOfTupples.Add(tup1);
+
+                    }
+                    if (line.LaneId == 2)
+                    {
+                        int count0 = line.CarQueue.Where(y => y.Name == "Truck").Count();
+                        int count1 = line.CarQueue.Where(y => y.Name == "Car").Count();
+                        int count2 = line.CarQueue.Where(y => y.Name == "Bus").Count();
+
+                        Tuple<int, int, int, int> tup2 = new Tuple<int, int, int, int>(count0, count1, count2, 2);
+                        ListOfTupples.Add(tup2);
+
+                    }
                 }
-            }
-
-
-            //Add Queue Car to lane
-            GasStation.Lanes[smallestQueueIndex].QueueCar(car);
+                //prioriti first we choose the line with min trucks next we search where is the min buses and last the min cars 
+                //and after the 3- searches we choose the correct line for us 
+                    int line1 = ListOfTupples.OrderBy(t => t.Item1).ThenBy(t => t.Item3).ThenBy(t => t.Item2).First().Item4;
+                    GasStation.Lanes[line1].QueueCar(car);
         }
 
         //Process Queue - Step

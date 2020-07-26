@@ -5,15 +5,19 @@ using System.Text;
 
 namespace GasStationProject
 {
+     
+
     public class ProgramConstatns
     {
+        private static Random r = new Random();
+
         public const float MinWaitTimeInSeconds = 10.0f;
 
         public const float MaxWaitTimeInSeconds = 30.0f;
 
-        public const float BusFuelTime = 140;
-        public const float CarFuelTime = 120;
-        public const float TrukFuelTime = 100;
+        public static float BusFuelTime = r.Next(5,100);
+        public static float CarFuelTime = r.Next(5, 100);
+        public static float TrukFuelTime = r.Next(5, 100);
 
         public const FuelType BusFuel = FuelType.Unleaded;
         public const FuelType TruckFuel = FuelType.Disel;

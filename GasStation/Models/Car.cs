@@ -73,7 +73,7 @@ namespace GasStationProject.Models
             }
             
             //Output
-            Console.WriteLine($"{this.Name}  with ID:  {this.CarId} Brand type {RandBrand()}  created with fueling time {this.FuelTimeMax}, que wait time {this.WaitTimeMax}, and fuel type {this.FuelType.ToString()}");
+            Console.WriteLine($"{this.Name}  with ID:  {this.CarId} Brand type {RandBrand()}  created with fueling time {this.FuelTimeMax} sec , que wait time {Math.Round(this.WaitTimeMax,2)} sec , and fuel type {this.FuelType.ToString()}");
         }
 
         //get random Brand from Brand.Enums 
